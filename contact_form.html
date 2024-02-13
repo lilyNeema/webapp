@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Black */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        form {
+            background-color: #663399; /* Rebeccapurple */
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            border-radius: 15px;
+            width: 70%; /* Increased width */
+            max-width: 600px; /* Added max-width */
+            margin: 0 auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #fff;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 12px;
+            color: #fff;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        input[type="submit"] {
+            background-color: #8a2be2; /* Blue Violet */
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out; /* Smooth transition on hover */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #9932cc; /* Dark Orchid */
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <form action="save_contact.php" method="post" class="formm">
+        <h2>Contact Details</h2>
+        <label for="mobile">Mobile Phone:</label>
+        <input type="tel" id="mobile" name="mobile" required><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea><br>
+        
+        <label for="reg_number">Registration Number:</label>
+        <input type="text" id="reg_number" name="reg_number" required><br>
+        
+        <input type="submit" value="Save Contact">
+    </form>
+
+
+</body>
+</html>
